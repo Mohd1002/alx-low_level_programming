@@ -8,7 +8,7 @@ int main(void)
 {
 	int x, lowercase;
 
-	for (x = 'A'; x <= 'Z';x++)
+	for (x = 'A'; x <= 'Z'; x++)
 	{
 	if (x == 'E')
 	{
