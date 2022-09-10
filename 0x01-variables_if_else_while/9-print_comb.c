@@ -10,9 +10,9 @@ int main(void)
 	set = '0';
 	for (set = '0'; set <= '9'; set++)
 	{
-	putchar(' ');
 	putchar(set);
 	putchar(',');
+	putchar(' ');
 	}
 	putchar('\n');
 return (0);
