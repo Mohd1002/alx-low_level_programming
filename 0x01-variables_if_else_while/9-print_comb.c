@@ -5,12 +5,14 @@
  */
 int main(void)
 {
-        int set;
+	int set;
 
-        set = '0';
-        for (set = '0'; set <= '9'; set++)
+	set = '0';
+	for (set = '0'; set <= '9'; set++)
 	{
-        putchar(' '); putchar(set); putchar(',');
+	putchar(' ');
+	putchar(set);
+	putchar(',');
 	}
 	putchar('\n');
 return (0);
