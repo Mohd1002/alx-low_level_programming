@@ -20,6 +20,11 @@ int main(void)
 		{
 			putchar(num);
 			putchar(num1);
+			if (counter > '8')
+			{
+				putchar('\n');
+				return (0);
+			}	
 			putchar(',');
 			putchar(' ');
 			num1++;
@@ -28,6 +33,5 @@ int main(void)
 		num++;
 
 	}
-	putchar('\n');
 return (0);
 }
