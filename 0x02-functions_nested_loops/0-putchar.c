@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 /**
  * main - Entry pointi
  * Return: Always 1 (Success)
