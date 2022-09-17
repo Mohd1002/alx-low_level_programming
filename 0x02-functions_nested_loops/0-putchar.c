@@ -1,13 +1,15 @@
 #include <stdio.h>
 /**
- * main - Entry pointi
+ * main - Entry point
  * Return: Always 1 (Success)
+ * @c: the character to print
  */
 int _putchar(char c);
 
 int main(void)
 {
 	char c = '_';
+
 	_putchar(c);
 	c = 'p';
 	_putchar(c);
