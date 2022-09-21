@@ -1,19 +1,21 @@
 #include <stdio.h>
 #include <string.h>
-/**
- */
-void reverse_array(int *a, int n)
+#include <ctype.h>
+char *string_toupper(char *str)
 {
-        int len, beg, r;
+        int len,c;
 
-        len = n - 1;
-        beg = 0;
-	while (beg <= len)
-	{	
-		r = a[beg];
-        	a[beg] = a[len];
-		a[len] = r;
-		beg++;
+	c = 0;
+        len = strlen(str);
+	up = toupper(str[c]);
+        while (len >= 0)
+        {
+		if (islower(str[c]))
+		{
+			up;
+		}
+		c++;
 		len--;
-	}
+        }
+	return (0);
 }
