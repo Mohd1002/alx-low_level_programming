@@ -14,19 +14,19 @@ int main(int argc, char *argv[])
 	if (argc == 0)
 	{
 		printf("0\n");
-		return (0);
+		return (1);
 	}
 	while (co < argc)
 	{
-		if (isdigit(*argv[co]))
-		{
-			ans += atoi(argv[co]);
-			co++;
-		}
-		else
+		if (!isdigit(*argv[co]))
 		{
 			printf("Error\n");
 			return (1);
+		}
+		else
+		{
+			ans += atoi(argv[co]);
+                        co++;
 		}
 	}
 	printf("%d\n", ans);
