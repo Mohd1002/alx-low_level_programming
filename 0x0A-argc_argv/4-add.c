@@ -9,15 +9,15 @@
  */
 int main(int argc, char *argv[])
 {
-        int co = 1, ans = 0;
+	int co = 1, ans = 0;
 
 	if (argc == 0)
 	{
 		printf("0\n");
 		return (1);
 	}
-        while (co < argc)
-        {
+	while (co < argc)
+	{
 		if (isdigit(*argv[co]))
 		{
 			ans += atoi(argv[co]);
