@@ -10,9 +10,13 @@
 char *str_concat(char *s1, char *s2)
 {
 	unsigned long int chsum, i = 0;
-	unsigned long int save = strlen(s1);
+	unsigned long int save;
 	char *s3;
 
+	if ((s1 == NULL) && (s2 == NULL))
+	{
+		return (NULL);
+	}
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -27,6 +31,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
+	save = strlen(s1);
 	while (i < strlen(s1))
 	{
 		if (s1[i] == '\0')
