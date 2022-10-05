@@ -18,12 +18,12 @@ char *create_array(unsigned int size, char c)
 	}
 	while (i <= size)
 	{
-		A[i] = c;
 		if (A == NULL)
 		{
-			printf("Can't allocate %d bytes (after %d calls)\n", size, i);
+			printf("Can't allocate %ld bytes (after %d calls)\n", size * sizeof(c), i);
 			return (NULL);
 		}
+		A[i] = c;
 		i++;
 	}
 	return (A);
