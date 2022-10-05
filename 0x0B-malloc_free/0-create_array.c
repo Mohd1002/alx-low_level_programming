@@ -23,6 +23,7 @@ char *create_array(unsigned int size, char c)
 	}
 	if (A == NULL)
 	{
+		free(A);
 		return (NULL);
 	}
 	return (A);
