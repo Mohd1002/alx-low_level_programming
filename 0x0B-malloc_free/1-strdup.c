@@ -10,10 +10,16 @@
 char *_strdup(char *str)
 {
 	unsigned long int i = 0;
-	char *strr = malloc(strlen(str));
+	char *strr = malloc(strlen(str)+ 1);
 
+	if (str == NULL)
+	{
+		printf("failed to allocate memory");
+		return (NULL);
+	}
 	if (strr == NULL)
 	{
+		printf("failed to allocate memory");
 		return (NULL);
 	}
 	while (i < strlen(str))
