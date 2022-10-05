@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned long int chsum = strlen(s1) + strlen(s2), i = 0, save = strlen(s1);
+	unsigned long int chsum = strlen(s1) + strlen(s2) + 1, i = 0, save = strlen(s1);
 	char *s3;
 
 	if (s1 == NULL)
