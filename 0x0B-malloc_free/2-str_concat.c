@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned long int chsum = strlen(s1) + strlen(s2) + 1, i = 0;
+	unsigned long int chsum, i = 0;
 	unsigned long int save = strlen(s1);
 	char *s3;
 
@@ -21,6 +21,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+	chsum = strlen(s1) + strlen(s2) + 1;
 	s3 = malloc(sizeof(char) * chsum);
 	if (s3 == NULL)
 	{
