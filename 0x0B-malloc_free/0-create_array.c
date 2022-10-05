@@ -19,12 +19,12 @@ char *create_array(unsigned int size, char c)
 	while (i <= size)
 	{
 		A[i] = c;
+		if (A == NULL)
+		{
+			printf("Can't allocate %d bytes (after %d calls)\n", size, i);
+			return (NULL);
+		}
 		i++;
-	}
-	if (A == NULL)
-	{
-		free(A);
-		return (NULL);
 	}
 	return (A);
 }
