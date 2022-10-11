@@ -1,4 +1,4 @@
-#ifndef struct dog
+#ifndef dog
 /**
  * struct dog - the stats of a dog
  * @name: the name of the dog
